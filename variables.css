@@ -96,8 +96,8 @@
     --body-text-transform-hh: none;
     --body-margin-bottom: 1em;
     
-    --caption-font-size-desktop-hh: 14;
-    --caption-font-size-mobile-hh: 12;
+    --caption-font-size-desktop-hh: 12;
+    --caption-font-size-mobile-hh: 10;
     --caption-line-height-hh: 1.16;
     --caption-letter-spacing-hh: 0;
     --caption-font-weight-hh: 400;
@@ -148,12 +148,18 @@
     --space-2xs: calc( (var(--space-2xs-desktop) - var(--space-2xs-mobile)) * var(--viewport-percent) + (var(--space-2xs-mobile)) * 1px );
 
     --page-margin: var(--space-xl);
-    --grid-gap-hh: var(--space-xs);
+    --grid-gap-hh: var(--space-lg);
+
+    /* Border */
+    --border-radius-sm: 2px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 20px;
+    --border-radius-round: 100vw;
 
     /* Icons */
-    --icon-size-s: 0.625rem;
-    --icon-size-m: 1rem;
-    --icon-size-l: 1.5rem;
+    --icon-size-lg: 1.5rem;
+    --icon-size-md: 1rem;
+    --icon-size-sm: 0.625rem;
 
     /* Form - Desktop */
     --form-gap-vertical: var(--space-xs);
