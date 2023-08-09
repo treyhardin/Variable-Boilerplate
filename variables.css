@@ -17,14 +17,14 @@
     --color-brand-tertiary-hh: #c1e0d8;
 
     --color-ink-hh: #000000;
-    --color-light-hh: #f6f6f6;
-    --color-neutral-hh: #b8b8b8;
-    --color-reverse-hh: #ffffff;
     --color-subdued-hh: #666666;
+    --color-neutral-hh: #b8b8b8;
+    --color-light-hh: #f6f6f6;
+    --color-reverse-hh: #ffffff;
 
     --color-danger-hh: #ec0000;
     --color-focus-hh: #0038ff;
-    --color-overlay-hh: #00000080;
+    --color-overlay-hh: rgba(0, 0, 0, 0.1);
     --color-success-hh: #25b900;
 
     /* Typography */
@@ -114,7 +114,7 @@
     --utility-text-transform-hh: uppercase;
     --utility-margin-bottom: 0.2em;
 
-    /* Spacing */
+    /* Spacing Tokens */
     --space-3xl-desktop: 120;
     --space-3xl-mobile: 80;
     --space-3xl: calc( (var(--space-3xl-desktop) - var(--space-3xl-mobile)) * var(--viewport-percent) + (var(--space-3xl-mobile)) * 1px );
@@ -147,6 +147,7 @@
     --space-2xs-mobile: 5;
     --space-2xs: calc( (var(--space-2xs-desktop) - var(--space-2xs-mobile)) * var(--viewport-percent) + (var(--space-2xs-mobile)) * 1px );
 
+    /* Spacing Utilities */
     --page-margin: var(--space-xl);
     --grid-gap-hh: var(--space-lg);
 
@@ -161,7 +162,7 @@
     --icon-size-md: 1rem;
     --icon-size-sm: 0.625rem;
 
-    /* Form - Desktop */
+    /* Form */
     --form-gap-vertical: var(--space-xs);
     --forms-gap-horizontal: var(--space-2xs);
 
