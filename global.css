@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Teodor';
+    src: url('/public/Teodor-Light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Teodor';
+    src: url('/public/Teodor-Thin.otf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/public/PPNeueMontreal-Book.otf');
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-body-hh);
+    font-size: 16px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    --font-size-fluid: max( var(--fluid-font-size), calc(var(--font-size-mobile) * 1px) );
+    margin-top: 0;
+}
+
+h1 {
+    --font-size-desktop: var(--h1-font-size-desktop-hh);
+    --font-size-mobile: var(--h1-font-size-mobile-hh);
+    font: var(--h1-font-weight-hh) var(--font-size-fluid)/var(--h1-line-height-hh) var(--h1-font-family-hh);
+    letter-spacing: var(--h1-letter-spacing-hh);
+    text-transform: var(--h1-text-transform-hh);
+    margin-bottom: var(--h1-margin-bottom);
+
+}
+
+h2 {
+    --font-size-desktop: var(--h2-font-size-desktop-hh);
+    --font-size-mobile: var(--h2-font-size-mobile-hh);
+    font: var(--h2-font-weight-hh) var(--font-size-fluid)/var(--h2-line-height-hh) var(--h2-font-family-hh);
+    letter-spacing: var(--h2-letter-spacing-hh);
+    text-transform: var(--h2-text-transform-hh);
+    margin-bottom: var(--h2-margin-bottom);
+}
+
+h3 {
+    --font-size-desktop: var(--h3-font-size-desktop-hh);
+    --font-size-mobile: var(--h3-font-size-mobile-hh);
+    font: var(--h3-font-weight-hh) var(--font-size-fluid)/var(--h3-line-height-hh) var(--h3-font-family-hh);
+    letter-spacing: var(--h3-letter-spacing-hh);
+    text-transform: var(--h3-text-transform-hh);
+    margin-bottom: var(--h3-margin-bottom);
+}
+
+h4 {
+    --font-size-desktop: var(--h4-font-size-desktop-hh);
+    --font-size-mobile: var(--h4-font-size-mobile-hh);
+    font: var(--h4-font-weight-hh) var(--font-size-fluid)/var(--h4-line-height-hh) var(--h4-font-family-hh);
+    letter-spacing: var(--h4-letter-spacing-hh);
+    text-transform: var(--h4-text-transform-hh);
+    margin-bottom: var(--h4-margin-bottom);
+}
+
+h5 {
+    --font-size-desktop: var(--h5-font-size-desktop-hh);
+    --font-size-mobile: var(--h5-font-size-mobile-hh);
+    font: var(--h5-font-weight-hh) var(--font-size-fluid)/var(--h5-line-height-hh) var(--h5-font-family-hh);
+    letter-spacing: var(--h5-letter-spacing-hh);
+    text-transform: var(--h5-text-transform-hh);
+    margin-bottom: var(--h5-margin-bottom);
+}
+
+h6 {
+    --font-size-desktop: var(--h6-font-size-desktop-hh);
+    --font-size-mobile: var(--h6-font-size-mobile-hh);
+    font: var(--h6-font-weight-hh) var(--font-size-fluid)/var(--h6-line-height-hh) var(--h6-font-family-hh);
+    letter-spacing: var(--h6-letter-spacing-hh);
+    text-transform: var(--h6-text-transform-hh);
+    margin-bottom: var(--h6-margin-bottom);
+}
+
+p {
+    --font-size-desktop: var(--body-font-size-desktop-hh);
+    --font-size-mobile: var(--body-font-size-mobile-hh);
+    font: var(--body-font-weight-hh) var(--font-size-fluid)/var(--body-line-height-hh) var(--body-font-family-hh);
+    letter-spacing: var(--body-letter-spacing-hh);
+    text-transform: var(--body-text-transform-hh);
+    margin-bottom: var(--body-margin-bottom);
+}
+
+.caption {
+    --font-size-desktop: var(--caption-font-size-desktop-hh);
+    --font-size-mobile: var(--caption-font-size-mobile-hh);
+    font: var(--caption-font-weight-hh) var(--font-size-fluid)/var(--caption-line-height-hh) var(--caption-font-family-hh);
+    letter-spacing: var(--caption-letter-spacing-hh);
+    text-transform: var(--caption-text-transform-hh);
+    margin-bottom: var(--caption-margin-bottom);
+}
+
+.utility {
+    --font-size-desktop: var(--utility-font-size-desktop-hh);
+    --font-size-mobile: var(--utility-font-size-mobile-hh);
+    font: var(--utility-font-weight-hh) var(--font-size-fluid)/var(--utility-line-height-hh) var(--utility-font-family-hh);
+    letter-spacing: var(--utility-letter-spacing-hh);
+    text-transform: var(--utility-text-transform-hh);
+    margin-bottom: var(--utility-margin-bottom);
+}

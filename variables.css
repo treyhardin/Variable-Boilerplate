@@ -1,0 +1,165 @@
+* {   
+    --font-size-range: calc( var(--font-size-desktop) - var(--font-size-mobile) ); /* The range between mobile and desktop font sizes */
+    --fluid-font-size: calc( var(--font-size-range) * var(--viewport-percent) + (var(--font-size-mobile)) * 1px ); /* A normalization equation that takes the range in font size and maps it between mobile width and desktop width */
+}
+
+:root {
+
+    /* Fluid Scaling */
+    --viewport-desktop: 1440; /* The width of the desktop designs in Figma */
+    --viewport-mobile: 400; /* The width of the mobile designs in Figma */
+    --viewport-range: calc( var(--viewport-desktop) - var(--viewport-mobile) ); /*The range between mobile and desktop viewport sizes */
+    --viewport-percent: calc( (100vw - (var(--viewport-mobile) * 1px)) / var(--viewport-range) ); /* How wide the current viewport is, relative to the mobile and desktop viewport sizes */
+
+    /* Color */
+    --color-brand-primary-hh: #ff5c01;
+    --color-brand-secondary-hh: #abc4ca;
+    --color-brand-tertiary-hh: #c1e0d8;
+
+    --color-ink-hh: #000000;
+    --color-light-hh: #f6f6f6;
+    --color-neutral-hh: #b8b8b8;
+    --color-reverse-hh: #ffffff;
+    --color-subdued-hh: #666666;
+
+    --color-danger-hh: #ec0000;
+    --color-focus-hh: #0038ff;
+    --color-overlay-hh: #00000080;
+    --color-success-hh: #25b900;
+
+    /* Typography */
+    --font-family-heading-hh: 'Teodor', Georgia, 'Times New Roman', Times, serif;
+    --font-family-body-hh: 'Neue Montreal', Arial, Helvetica, sans-serif;
+    --font-family-utility-hh: 'Neue Montreal', Arial, Helvetica, sans-serif;
+
+    --h1-font-size-desktop-hh: 86; /* Font size in pixels from desktop designs */
+    --h1-font-size-mobile-hh: 46; /* Font size in pixels from mobile designs */
+    --h1-line-height-hh: 1.03; /* Line height uses percentages from Figma divided by 100 */
+    --h1-letter-spacing-hh: -0.12rem;
+    --h1-font-weight-hh: 300;
+    --h1-font-family-hh: var(--font-family-heading-hh);
+    --h1-text-transform-hh: none;
+    --h1-margin-bottom: 0.2em; /* Use em to make margin scale with font size */
+
+    --h2-font-size-desktop-hh: 64;
+    --h2-font-size-mobile-hh: 40;
+    --h2-line-height-hh: 1.1;
+    --h2-letter-spacing-hh: -0.125rem;
+    --h2-font-weight-hh: 300;
+    --h2-font-family-hh: var(--font-family-heading-hh);
+    --h2-text-transform-hh: none;
+    --h2-margin-bottom: 0.2em;
+
+    --h3-font-size-desktop-hh: 46;
+    --h3-font-size-mobile-hh: 32;
+    --h3-line-height-hh: 1.1;
+    --h3-letter-spacing-hh: -0.1rem;
+    --h3-font-weight-hh: 300;
+    --h3-font-family-hh: var(--font-family-heading-hh);
+    --h3-text-transform-hh: none;
+    --h3-margin-bottom: 0.2em;
+
+    --h4-font-size-desktop-hh: 34;
+    --h4-font-size-mobile-hh: 26;
+    --h4-line-height-hh: 1.2;
+    --h4-letter-spacing-hh: 0;
+    --h4-font-weight-hh: 400;
+    --h4-font-family-hh: var(--font-family-heading-hh);
+    --h4-text-transform-hh: none;
+    --h4-margin-bottom: 0.2em;
+    
+    --h5-font-size-desktop-hh: 26;
+    --h5-font-size-mobile-hh: 20;
+    --h5-line-height-hh: 1.33;
+    --h5-letter-spacing-hh: -0.0625rem;
+    --h5-font-weight-hh: 400;
+    --h5-font-family-hh: var(--font-family-heading-hh);
+    --h5-text-transform-hh: none;
+    --h5-margin-bottom: 0.2em;
+    
+    --h6-font-size-desktop-hh: 20;
+    --h6-font-size-mobile-hh: 16;
+    --h6-font-size-hh: 1.3;
+    --h6-line-height-hh: 1.4625rem;
+    --h6-letter-spacing-hh: 0;
+    --h6-font-weight-hh: 400;
+    --h6-font-family-hh: var(--font-family-heading-hh);
+    --h6-text-transform-hh: none;
+    --h6-margin-bottom: 0.2em;
+    
+    --body-font-size-desktop-hh: 16;
+    --body-font-size-mobile-hh: 14;
+    --body-line-height-hh: 1.4;
+    --body-letter-spacing-hh: 0;
+    --body-font-weight-hh: 400;
+    --body-font-family-hh: var(--font-family-body-hh);
+    --body-text-transform-hh: none;
+    --body-margin-bottom: 1em;
+    
+    --caption-font-size-desktop-hh: 14;
+    --caption-font-size-mobile-hh: 12;
+    --caption-line-height-hh: 1.16;
+    --caption-letter-spacing-hh: 0;
+    --caption-font-weight-hh: 400;
+    --caption-font-family-hh: var(--font-family-body-hh);
+    --caption-text-transform-hh: none;
+    --caption-margin-bottom: 1em;
+    
+    --utility-font-size-desktop-hh: 12;
+    --utility-font-size-mobile-hh: 12;
+    --utility-line-height-hh: .85;
+    --utility-letter-spacing-hh: 0.15rem;
+    --utility-font-weight-hh: 700;
+    --utility-font-family-hh: var(--font-family-utility-hh);
+    --utility-text-transform-hh: uppercase;
+    --utility-margin-bottom: 0.2em;
+
+    /* Spacing */
+    --space-3xl-desktop: 120;
+    --space-3xl-mobile: 80;
+    --space-3xl: calc( (var(--space-3xl-desktop) - var(--space-3xl-mobile)) * var(--viewport-percent) + (var(--space-3xl-mobile)) * 1px );
+
+    --space-2xl-desktop: 80;
+    --space-2xl-mobile: 60;
+    --space-2xl: calc( (var(--space-2xl-desktop) - var(--space-2xl-mobile)) * var(--viewport-percent) + (var(--space-2xl-mobile)) * 1px );
+
+    --space-xl-desktop: 60;
+    --space-xl-mobile: 40;
+    --space-xl: calc( (var(--space-xl-desktop) - var(--space-xl-mobile)) * var(--viewport-percent) + (var(--space-xl-mobile)) * 1px );
+
+    --space-lg-desktop: 45;
+    --space-lg-mobile: 30;
+    --space-lg: calc( (var(--space-lg-desktop) - var(--space-lg-mobile)) * var(--viewport-percent) + (var(--space-lg-mobile)) * 1px );
+
+    --space-md-desktop: 30;
+    --space-md-mobile: 20;
+    --space-md: calc( (var(--space-md-desktop) - var(--space-md-mobile)) * var(--viewport-percent) + (var(--space-md-mobile)) * 1px );
+
+    --space-sm-desktop: 20;
+    --space-sm-mobile: 15;
+    --space-sm: calc( (var(--space-sm-desktop) - var(--space-sm-mobile)) * var(--viewport-percent) + (var(--space-sm-mobile)) * 1px );
+
+    --space-xs-desktop: 10;
+    --space-xs-mobile: 10;
+    --space-xs: calc( (var(--space-xs-desktop) - var(--space-xs-mobile)) * var(--viewport-percent) + (var(--space-xs-mobile)) * 1px );
+
+    --space-2xs-desktop: 5;
+    --space-2xs-mobile: 5;
+    --space-2xs: calc( (var(--space-2xs-desktop) - var(--space-2xs-mobile)) * var(--viewport-percent) + (var(--space-2xs-mobile)) * 1px );
+
+    --page-margin: var(--space-xl);
+    --grid-gap-hh: var(--space-xs);
+
+    /* Icons */
+    --icon-size-s: 0.625rem;
+    --icon-size-m: 1rem;
+    --icon-size-l: 1.5rem;
+
+    /* Form - Desktop */
+    --form-gap-vertical: var(--space-xs);
+    --forms-gap-horizontal: var(--space-2xs);
+
+
+
+
+}

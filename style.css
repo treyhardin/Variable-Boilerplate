@@ -1,0 +1,59 @@
+.typography {
+    padding: 0 var(--page-margin);
+}
+
+.spacers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--grid-gap-hh);
+    padding: 0 var(--page-margin);
+}
+
+.spacer {
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-neutral-hh);
+    width: var(--spacer-size);
+    height: var(--spacer-size);
+    position: relative;
+    margin-bottom: var(--space-md);
+}
+
+.spacer > p {
+    position: absolute;
+    bottom: calc(var(--space-sm) * -1);
+    margin-bottom: 0;
+}
+
+.space-3xl {
+    --spacer-size: var(--space-3xl);
+}
+
+.space-2xl {
+    --spacer-size: var(--space-2xl);
+}
+
+.space-xl {
+    --spacer-size: var(--space-xl);
+}
+
+.space-lg {
+    --spacer-size: var(--space-lg);
+}
+
+.space-md {
+    --spacer-size: var(--space-md);
+}
+
+.space-sm {
+    --spacer-size: var(--space-sm);
+}
+
+.space-xs {
+    --spacer-size: var(--space-xs);
+}
+
+.space-2xs {
+    --spacer-size: var(--space-2xs);
+}
