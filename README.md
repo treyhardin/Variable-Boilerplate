@@ -5,7 +5,11 @@
 
 A proposal for tighter integration between our Figma design system and Half Helix's [DNA Starter Kit](https://github.com/halfhelix/dna "DNA Starter File").
 
-Frontend Demo: [Variable Boilerplate Preview](https://variable-boilerplate.vercel.app/ "Live Preview")
+[**Variable Boilerplate Preview**](https://variable-boilerplate.vercel.app/ "Live Preview"): Visual reference for the variables included in this system and the fluid scaling behavior.
+
+[Variables.css](https://github.com/treyhardin/Variable-Boilerplate/blob/main/global.css "Variables CSS"): All CSS variables, including the fluid scaling functions. Ideally all changes to typography styles, spacing tokens, and global styling can happen in this file (with the potential exception of font imports).
+
+[Global.css](https://github.com/treyhardin/Variable-Boilerplate/blob/main/global.css "Global CSS"): Boilerplate CSS to implement our variables. Should be mostly plug-and-play for all projects.
 
 
 
