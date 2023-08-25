@@ -158,9 +158,9 @@
 }
 
 
+/* On larger screen we just scale the desktop values by how much larger viewport is than desktop viewport */
 @media screen and (min-width: 1440px) {
     * {
-        /* On larger screen we just scale the desktop fonts proportionally */
         --fluid-font-size-hh: calc( var(--font-size-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
     }
 
