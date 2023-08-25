@@ -81,7 +81,7 @@
     --h6-font-family-hh: var(--font-family-heading-hh);
     --h6-text-transform-hh: none;
     
-    --body-font-size-desktop-hh: 16;
+    --body-font-size-desktop-hh: 14;
     --body-font-size-mobile-hh: 14;
     --body-line-height-hh: 1.4;
     --body-letter-spacing-hh: 0;
@@ -90,7 +90,7 @@
     --body-text-transform-hh: none;
     --body-margin-bottom: 1em;
     
-    --caption-font-size-desktop-hh: 12;
+    --caption-font-size-desktop-hh: 10;
     --caption-font-size-mobile-hh: 10;
     --caption-line-height-hh: 1.16;
     --caption-letter-spacing-hh: 0;
@@ -155,4 +155,23 @@
     --icon-size-md-hh: 1rem;
     --icon-size-sm-hh: 0.625rem;
 
+}
+
+
+@media screen and (min-width: 1440px) {
+    * {
+        /* On larger screen we just scale the desktop fonts proportionally */
+        --fluid-font-size-hh: calc( var(--font-size-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+    }
+
+    :root {
+        --space-3xl-hh: calc( var(--space-3xl-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+        --space-2xl-hh: calc( var(--space-2xl-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+        --space-xl-hh: calc( var(--space-xl-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+        --space-lg-hh: calc( var(--space-lg-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+        --space-md-hh: calc( var(--space-md-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+        --space-sm-hh: calc( var(--space-sm-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+        --space-xs-hh: calc( var(--space-xs-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+        --space-2xs-hh: calc( var(--space-2xs-desktop-hh) * 100vw / var(--viewport-desktop-hh) );
+    }
 }
