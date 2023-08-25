@@ -32,7 +32,7 @@ Then, for each of our **Typography** or **Spacing** values, we set the desktop a
 ```
 These values are then taken into a `calc()` function that determines what size a value should get based on the viewport size. The logic here is that mobile represents our minimum values, while desktop determines the proportion we should scale relative to viewport.
 
-These calculated values can get larger than the desktop values as viewport extends beyond the desktop design viewport, allowing us to fluidly scale to larger screens with minimal tweaking. 
+These calculated values can get larger than the desktop values as viewport extends beyond the desktop design viewport, allowing us to fluidly scale to larger screens with minimal tweaking. Once viewport gets larger than our desktop design viewport, fluid sizes just scale proportionally from their desktop values by a factor based on % larger than designs.
 
 
 ## Colors
